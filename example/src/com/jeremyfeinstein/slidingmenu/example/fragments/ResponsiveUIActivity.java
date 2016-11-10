@@ -40,7 +40,7 @@ public class ResponsiveUIActivity extends SlidingFragmentActivity {
 			getSlidingMenu().setSlidingEnabled(true);
 			getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 			// show home as up so we can toggle
-			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+			getActionBar().setDisplayHomeAsUpEnabled(true);
 		} else {
 			// add a dummy view
 			View v = new View(this);
@@ -81,14 +81,14 @@ public class ResponsiveUIActivity extends SlidingFragmentActivity {
 			.show();
 	}
 
-	@Override
+/*	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			toggle();
 		}
 		return super.onOptionsItemSelected(item);
-	}
+	}*/
 
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
